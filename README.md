@@ -7,17 +7,17 @@ A Kakoune splash screen with a textured logo.
 This plugin is an alternative to [splash.kak](https://github.com/ftonneau/splash.kak).
 Two issues with splash.kak are worth mentioning.
 
-First, the triangular parts of the splash.kak logo involve UTF-8 characters that
-are guaranteed to match rectangular cell height only on a VTE-based terminal
-(where they are drawn as actual geometric shapes). Other terminals will draw
-these characters as text, with potentially desastrous results unless one relies
-on special fonts (as in [this solution](https://github.com/Hjagu09/splash.kak) by
+First, the triangular parts of the splash.kak logo involve UTF-8 characters
+that are guaranteed to match cell height only on a VTE-based terminal (where
+they are drawn as actual geometric shapes). Other terminals will draw these
+characters as text, with potentially desastrous results unless one relies on
+special fonts (as in [this solution](https://github.com/Hjagu09/splash.kak) by
 [Hjagu09](https://github.com/Hjagu09)).
 
-Second, even on VTE-based terminals and/or with an adequate font, the splash.kak
-logo looks good only within a narrow range of combinations of cell width and height
-(combinations which depend both on the terminal and on the chosen font). Outside of
-this narrow range, the letter K that the logo represents will look distorted.
+Second, even on VTE-based terminals or with an adequate font, the splash.kak logo looks
+good only within a narrow range of combinations of cell width and height (combinations
+which depend both on the terminal and on the chosen font). Outside of this narrow range,
+the letter K that the logo represents will look distorted.
 
 Texture **eliminates these problems** by relying only on plain ASCII characters
 and allowing the width/height ratio of the logo to be adjusted.
@@ -63,10 +63,10 @@ with the configuration you desire. There are two arguments to `texture`:
 - the first argument, `VARIANT`, must be either `light` or `dark`, depending on the
 type of terminal background you want to use.
 
-- the second argument, `WIDTH`, must be an integer from 1 to 8. A larger
-integer value corresponds to a wider/thicker logo shape. You should probably
-try a few values and pick the one that gives better results (meaning, a logo
-that looks **approximately square** in your terminal with your chosen font).
+- the second argument, `WIDTH`, must be an integer from 1 to 8. A larger integer value
+corresponds to a wider logo shape. You should probably try a few values and pick the
+one that gives better results (meaning, a logo that looks **approximately square**
+in your terminal with your chosen font).
 
 
 ## Note
