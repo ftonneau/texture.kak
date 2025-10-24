@@ -19,10 +19,8 @@ logo looks good only within a narrow range of combinations of cell width and hei
 (combinations which depend both on the terminal and on the chosen font). Outside of
 this narrow range, the letter K that the logo represents will look distorted.
 
-Texture **eliminates these problems** by:
-
-- relying only on plain ASCII characters.
-- allowing the width/height ratio of the logo to be adjusted.
+Texture **eliminates these problems** by relying only on plain ASCII characters
+and allowing the width/height ratio of the logo to be adjusted.
 
 The texture splash screen can be used on a light or dark background, depending
 on your current colorscheme.
@@ -36,7 +34,8 @@ directory tree.
 
 # Color configuration
 
-The **colors of the K logo** can be configured via the following options:
+The **colors of the K logo** are independent of the terminal background (light
+or dark) and can be configured via the following options:
 
 - `texture_trunk_color` for the trunk (i.e., the rectangular part of the K letter)
 - `texture_fork_color` for the upward diagonal in the K letter
@@ -44,12 +43,11 @@ The **colors of the K logo** can be configured via the following options:
 - `texture_tile_color` for the tile elements outside of the letter
 - `texture_pane_color` for the background behind the tiles
 
-Two **text colors** can also be configured. In this case, however, and contrary
-to the logo, the colors are supposed to differ depending on terminal background:
+Two **text colors** can also be configured. In this case, however, the colors
+are supposed to differ as a function of the terminal background:
 
 - `texture_dim_light` for faded text in a light terminal
 - `texture_dim_dark` for faded text in a dark terminal
-
 - `texture_hot_light` for vivid text in a light terminal
 - `texture_hot_dark` for vivid text in a dark terminal
 
